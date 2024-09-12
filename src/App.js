@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+/* eslint-disable jsx-a11y/img-redundant-alt */
+import AllRouter from "./all-router";
+import { FooterLayout, NavbarLayout } from "./components/common";
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>
+      {/* <div className="absolute right-0">
+        <img src='/asset/image/Decore.png' alt='image'/>
+      </div> */}
+     <NavbarLayout />
+
+     <AllRouter />
+{/* 
+     <FooterLayout /> */}
+    
+    </main>
   );
 }
 
