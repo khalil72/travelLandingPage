@@ -96,9 +96,9 @@ const BookTripSection = () => {
           <EllipseSvg />
         </div> */}
       
-        <div className="absolute top-[-10px] right-0 w-[354px]  h-[367px] opacity-[20%] bg-ellipse shadow-ellipse z-[-1]" />
+        <div className="absolute top-[40%] left-[80%]  w-[20px]  h-[20px] opacity-[10%] bg-ellipse shadow-ellipse z-[-1]" />
 
-
+        
 
       </div>
 

@@ -9,8 +9,9 @@ body {
  
   @layer utilities {
     .bg-ellipse {
-      background: radial-gradient(circle, #4a90e2, #005bb5);
-      border-radius: 50%;
+      background: #2f7ad2;
+      border-radius: 500px;
+      box-shadow: -1px 0px 28px 153px #0775f7
     }
   }
 

@@ -3,9 +3,6 @@ import React from 'react'
 import Container from '../../container'
 import MenuData from '../../../../data/menu-data'
 
-
-
-
 const NavbarLayout = () => {
   const buttonText = 'Sign Up'
   return (
