@@ -18,7 +18,7 @@ const HomePage= () => {
      <section className='pt-[105px]'>
       <DestinationSection />
      </section>
-     <section className='pt-[105px]'>
+     <section className='pt-[105px] relative'>
       <BookTripSection />
      </section>
      <section className='pt-[110px]'>

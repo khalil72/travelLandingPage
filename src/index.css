@@ -7,3 +7,47 @@ body {
     font-family: 'Google Sans', sans-serif;
   }
  
+  @layer utilities {
+    .bg-ellipse {
+      background: radial-gradient(circle, #4a90e2, #005bb5);
+      border-radius: 50%;
+    }
+  }
+
+  @layer slick-dots {
+    .slick-dots {
+      text-align: left !important;
+    }
+  
+    .slick-dots li button:before {
+      font-size: 10px;
+      color: #005bb5;
+    }
+  }
+  @layer components {
+    .slick-slide {
+        @apply flex justify-center items-center;
+    }
+
+    .slick-track {
+        @apply flex items-center;
+    }
+
+    .slick-list {
+        @apply overflow-hidden;
+    }
+
+    .custom-arrow {
+        z-index: 10;
+    }
+
+    .custom-prev-arrow {
+        @apply absolute;
+        top: 25%;
+    }
+
+    .custom-next-arrow {
+        @apply absolute;
+        top: 75%;
+    }
+}
