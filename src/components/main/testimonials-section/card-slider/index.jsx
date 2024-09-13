@@ -24,11 +24,11 @@ const CardSlider = () => {
     };
 
     return (
-        <div className="relative w-full h-[245px] p-4">
-            <Slider {...settings} className="w-full">
+        <div className="relative w-full max-w-[669px] h-[245px] p-4">
+            <Slider {...settings} className="">
                 {TestimonailData?.map((testimonial, index) => (
-                    <div key={index} className="testimonial-slide flex justify-center relative mb-6">
-                        <Card className='w-[400px] h-[245px] p-10 rounded-md mx-auto'>
+                    <div key={index} className="testimonial-slide flex justify-center relative mb-6 ">
+                        <Card className='!max-w-[400px] h-[245px] p-10 rounded-md mx-auto'>
                         
                             <p className="text-[14px] font-[400] leading-[32px] mb-4 my-4">{testimonial.desc}</p>
                             <h4 className="font-bold text-[18px]">{testimonial.name}</h4>
