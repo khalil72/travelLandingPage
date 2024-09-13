@@ -1,22 +1,19 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
+import React from 'react';
 import AllRouter from "./all-router";
 import { FooterLayout, NavbarLayout } from "./components/common";
-
-
-
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 function App() {
   return (
-    <main>
-      {/* <div className="absolute right-0">
-        <img src='/asset/image/Decore.png' alt='image'/>
-      </div> */}
-     <NavbarLayout />
+    <main className="relative">
+  
+  
 
-     <AllRouter />
-{/* 
-     <FooterLayout /> */}
-    
+      <NavbarLayout />
+      <AllRouter />
+      <FooterLayout />
     </main>
   );
 }

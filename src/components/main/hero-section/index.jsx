@@ -12,7 +12,6 @@ const HeroSection = () => {
                 <p className='text-[80px] font-bold leading-[89px] tracking-[-4%] mb-5'>
                     Travel,enjoy and live a new and full life
                 </p>
-
                 <p className='w-full max-w-[450px]  text-[16px] font-[400] leading-[30px] text-subColor mb-5'>Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it engrossed listening. Park gate sell they west hard for the.</p>
                 <div className='flex lg:flex-row gap-5'>
                     <Button text={'Find out more'} className={'text-[18px] font-[500] text-center '} />
@@ -21,8 +20,6 @@ const HeroSection = () => {
                         <span className='text-[14px] font-[500] my-6'>Play Demo</span>
                     </button>
                 </div>
-
-
             </div>
             <div>
                 <img src='/asset/image/Traveller1.png' alt='travaller' />
