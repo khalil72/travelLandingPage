@@ -3,10 +3,16 @@ import Container from '../../common/container'
 import { Heading, Text } from '../../common'
 import BookingTripData from '../../../data/bookingtrip-data'
 import Card from '../../common/card'
+import LeafSvg from '../../svgs/leaf'
+import MapSvg from '../../svgs/map'
+import NavigationSvg from '../../svgs/naviagtion'
+import BuildingSvg from '../../svgs/building'
+import HeartSvg from '../../svgs/heart'
+
 
 const BookTripSection = () => {
     return (
-        <Container>
+        <Container className={'h-full !max-h-[492px] mb-10' }>
   <div className='flex flex-col lg:flex-row justify-between gap-0 h-full max-h-[400px] relative'>
    
   <div className='absolute left-[65%] shadow- items-end z-0 mb-0 w-[350px] h-[200px] bg-shadowColor rounded-0' style={{ opacity: '10%' }}>
@@ -48,23 +54,25 @@ const BookTripSection = () => {
             <Text text={'by Robbin Joseph'} />
           </div>
           <div className='flex gap-6 my-4'>
-            <button>
-              <img src='/asset/image/leaf.png' alt='leaf' />
-            </button>
-            <button>
-              <img src='/asset/image/map2.png' alt='map' />
-            </button>
-            <button>
-              <img src='/asset/image/send.png' alt='send' />
-            </button>
+            <button className='flex items-center bg-[#F5F5F5] justify-center rounded-[50%] w-[36px] h-[36px]  font-[900] text-[#F5F5F5]'>
+                <LeafSvg />
+
+               </button>
+            
+               <button className='flex items-center bg-[#F5F5F5] justify-center rounded-[50%] w-[36px] h-[36px]  font-[900] text-[#F5F5F5]'>
+               <MapSvg />
+                </button>
+                <button className='flex items-center bg-[#F5F5F5] justify-center rounded-[50%] w-[36px] h-[36px]  font-[900] text-[#F5F5F5]'>
+                 <NavigationSvg />
+              </button>
           </div>
           <div className='flex justify-between my-7'>
             <div className='flex gap-4'>
-              <img src='/asset/image/building.png' alt='building' />
+              <BuildingSvg />
               <p className='text-[14px] font-[400] leading-[20px] text-subColor'>24 people going</p>
             </div>
             <button>
-              <img src='/asset/image/heart.png' alt='heart' />
+             <HeartSvg />
             </button>
           </div>
         </div>

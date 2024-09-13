@@ -1,6 +1,7 @@
 import React from 'react'
 import Container from '../../common/container'
 import { Button } from '../../common'
+import { FaPlay } from "react-icons/fa";
 
 const HeroSection = () => {
     return (
@@ -15,9 +16,16 @@ const HeroSection = () => {
                 <p className='w-full max-w-[450px]  text-[16px] font-[400] leading-[30px] text-subColor mb-5'>Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it engrossed listening. Park gate sell they west hard for the.</p>
                 <div className='flex lg:flex-row gap-5'>
                     <Button text={'Find out more'} className={'text-[18px] font-[500] text-center '} />
-                    <button className='flex items-stretch gap-0  max-w-[170px]  '>
-                        <img src='/asset/image/Playbutton.png' alt='demo' className='h-[90px] w-[82px]' />
-                        <span className='text-[14px] font-[500] my-6'>Play Demo</span>
+                    <div className='flex  gap-4 items-center justify-center'>
+                        <button  className='bg-redColor h-[50px] w-[50px] rounded-[50%] shadow-[3px_2px_10px_#DF6951] text-white' >
+                         <FaPlay className='mx-auto' />
+                        </button>
+                        <span className='text-[17px ]'>Play Demo</span>
+
+                    </div>
+                    <button className='flex items-stretch gap-0  max-w-[170px] '>
+                         
+                       
                     </button>
                 </div>
             </div>

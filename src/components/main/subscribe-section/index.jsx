@@ -2,12 +2,14 @@
 import React from 'react';
 import Container from '../../common/container';
 import { Button, Heading } from '../../common';
+import SubcribeLine1 from '../../svgs/subcribeline1';
+import SubscribeLine2 from '../../svgs/subscribe-line2';
 
 const SubscribeSection = () => {
     return (
         <Container className='relative rounded-custom h-full lg:max-h-[407px] p-10 pt-20'>
             <button className='absolute right-0 top-[-10px] z-10 '>
-                    <img src='/asset/image/subcribeiccon.png' alt='image' />
+                    <SubscribeLine2 />
             </button>
            
         {/* opacity manage in this div  */}
@@ -19,7 +21,7 @@ const SubscribeSection = () => {
             </div>
             
 
-            <div className='relative w-full max-w-[881px] flex flex-col justify-center mx-auto z-10'>
+            <div className='relative w-full max-w-[881px] flex flex-col justify-center mx-auto z-50'>
             
                 <Heading 
                     title='Subscribe to get information, latest news and other interesting offers about Jadoo'
@@ -46,8 +48,9 @@ const SubscribeSection = () => {
             </div>
 
             {/* Background Image with Opacity */}
-            <div className='absolute bottom-0 left-0 opacity-[10%] z-0'>
-                <img src='/asset/image/subscribeimg.png' alt='Subscribe Image' />
+            <div className='absolute bottom-0 left-8  opacity-[10%] z-0 overflow-hidden'>
+           <SubcribeLine1 />
+
             </div>
         </Container>
     );

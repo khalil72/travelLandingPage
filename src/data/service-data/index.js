@@ -1,26 +1,31 @@
+import CustomizationSvg from "../../components/svgs/customization";
+import EventSvg from "../../components/svgs/event";
+import PlaneSvg from "../../components/svgs/plane";
+import WeatherSvg from "../../components/svgs/weather";
+
 const ServiceData = [
     {
         id:1,
-        image:'/asset/image/Group48.png',
+        image: WeatherSvg,
         title:'Calculated Weather',
         desc:'Built Wicket longer admire do barton vanity itself do in it.'
     },
     {
         id:2,
-        image:'/asset/image/Group51.png',
+        image: PlaneSvg,
         title:'Best Flights',
         desc:'Engrossed listening. Park gate sell they west hard for the..'
     },
 
     {
         id:3,
-        image:'/asset/image/Group50.png',
+        image: EventSvg,
         title:'Local Events',
         desc:'Barton vanity itself do in it. Preferd to men it engrossed listening.'
     },
     {
         id:4,
-        image:'/asset/image/Group49.png',
+        image:CustomizationSvg,
         title:'Customization',
         desc:'We deliver outsourced aviation services for military customers'
     },

@@ -1,3 +1,4 @@
+/* eslint-disable no-dupe-keys */
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -18,6 +19,10 @@ module.exports = {
         dataColor: '#84829A',
         custombg: '#DFD7F9',
         hslColor: 'hsla(225, 39%, 36%, 1)',
+      
+        shadowColor:' 3px 2px 10px #ffa50078'
+
+
       },
       borderRadius: {
         custom: '129px 20px 20px 20px',

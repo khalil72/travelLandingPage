@@ -1,10 +1,10 @@
 import React from 'react'
-import { BookTripSection, DestinationSection, HeroSection, ServicesSection } from '../../components/main'
+import { BookTripSection, DestinationSection, HeroSection, ServicesSection, TestimonailSection } from '../../components/main'
 import SubscribeSection from '../../components/main/subscribe-section'
 import LogoSection from '../../components/main/logo-section'
 
 const HomePage= () => {
-  const pt='105px'
+  
   return (
     <>
    
@@ -21,9 +21,8 @@ const HomePage= () => {
      <section className='pt-[105px]'>
       <BookTripSection />
      </section>
-     <section className='pt-[105px]'>
-      testiminologies
-      
+     <section className='pt-[110px]'>
+     <TestimonailSection />
      </section>
      <section className='pt-[105px]'>
       <LogoSection />
