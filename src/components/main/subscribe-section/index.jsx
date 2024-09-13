@@ -4,20 +4,21 @@ import Container from '../../common/container';
 import { Button, Heading } from '../../common';
 import SubcribeLine1 from '../../svgs/subcribeline1';
 import SubscribeLine2 from '../../svgs/subscribe-line2';
+import SubscribeNavigation from '../../svgs/subcribe-navigation';
 
 const SubscribeSection = () => {
     return (
         <Container className='relative rounded-custom h-full lg:max-h-[407px] p-10 pt-20'>
-            <button className='absolute right-0 top-[-10px] z-10 '>
-                    <SubscribeLine2 />
+            <button className='absolute top-[-25px]  right-[-18px] z-10 '>
+           <SubscribeNavigation />             
             </button>
            
         {/* opacity manage in this div  */}
             <div className='absolute inset-0 before:rounded-custom  z-0 before:content-[""] before:absolute before:inset-0 before:bg-custombg before:opacity-[20%]'></div>
 
             
-            <div className='absolute top-0  right-[0px] opacity-[10%] '>
-                <img src='/asset/image/lines2.png' alt='Subscribe Image' className='w-[248px] h-[248px] object-conver'/>
+            <div className='absolute top-0  right-[0px] '>
+            <SubscribeLine2 />
             </div>
             
 
@@ -48,7 +49,7 @@ const SubscribeSection = () => {
             </div>
 
             {/* Background Image with Opacity */}
-            <div className='absolute bottom-0 left-8  opacity-[10%] z-0 overflow-hidden'>
+            <div className='absolute bottom-0 left-8  opacity-[6%] z-0 overflow-hidden'>
            <SubcribeLine1 />
 
             </div>
