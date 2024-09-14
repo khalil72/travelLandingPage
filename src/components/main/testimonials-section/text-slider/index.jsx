@@ -45,21 +45,21 @@ const TextSlider = () => {
         <Heading
             title={'What people say about Us'} 
             subtitle={'Testimonials'}
-            className='!items-start !text-start'
+            className='lg:!items-start lg:!text-start'
           />
         </div>
         <div>
         <Heading
             title={'What people say about Us'} 
             subtitle={'Testimonials'}
-            className='!items-start !text-start'
+            className='lg:!items-start lg:!text-start'
           />
         </div>
         <div>
         <Heading
             title={'What people say about Us'} 
             subtitle={'Testimonials'}
-            className='!items-start !text-start'
+            className='lg:!items-start lg:!text-start'
           />
         </div>
        

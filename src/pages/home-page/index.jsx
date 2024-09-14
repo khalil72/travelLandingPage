@@ -8,27 +8,27 @@ const HomePage= () => {
   return (
     <>
    
-     <section className='pt-[105px]  '>
+     <section className='pt-[50px] lg:pt-[105px]  '>
       <HeroSection />
      </section>
      
-     <section className='pt-[105px]'>
+     <section className='pt-[50px]  lg:pt-[105px]'>
       <ServicesSection />
      </section>
-     <section className='pt-[105px]'>
+     <section className='pt-[50px]  lg:pt-[105px]'>
       <DestinationSection />
      </section>
-     <section className='pt-[105px] relative'>
+     <section className='pt-[50px]  lg:pt-[105px] relative'>
       <BookTripSection />
      </section>
-     <section className='pt-[110px]'>
+     <section className='pt-[50px]  lg:pt-[110px]'>
      <TestimonailSection />
      </section>
-     <section className='pt-[105px]'>
+     <section className='pt-[50px]  lg:pt-[105px]'>
       <LogoSection />
 
      </section>
-     <section className='pt-[105px]'>
+     <section className='pt-[50px]  lg:pt-[105px]'>
       <SubscribeSection />
 
      </section>

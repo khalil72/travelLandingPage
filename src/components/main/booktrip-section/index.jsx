@@ -8,13 +8,13 @@ import MapSvg from '../../svgs/map'
 import NavigationSvg from '../../svgs/naviagtion'
 import BuildingSvg from '../../svgs/building'
 import HeartSvg from '../../svgs/heart'
-import EllipseSvg from '../../svgs/ellipse'
+
 
 
 const BookTripSection = () => {
   return (
-    <Container className={'h-full !max-h-[492px] mb-10'}>
-      <div className='flex flex-col lg:flex-row justify-between gap-0 h-full max-h-[400px] relative'>
+    <Container className={'!h-full lg:!max-h-[492px] mb-10'}>
+      <div className='flex flex-col lg:flex-row   justify-center lg:justify-between gap-0 h-full lg:max-h-[400px] relative'>
 
 
         <div className='w-full lg:max-w-[450px]'>
@@ -24,7 +24,7 @@ const BookTripSection = () => {
             className={'!text-left !items-start'}
           />
 
-          <ul className='w-full lg:max-w-[395px] my-2'>
+          <ul className='w-full lg:max-w-[395px] my-7'>
             {BookingTripData?.map((item, index) => (
               <li key={index} className='mb-4 lg:h-[90px]'>
                 <div className='flex gap-4'>
@@ -40,8 +40,8 @@ const BookTripSection = () => {
         </div>
 
 
-        <div className='relative pr-[100px]'>
-          <Card className='my-14 z-20 w-full max-w-[370px] h-full max-h-[400px] p-7 rounded-[24px]'>
+        <div className='relative lg:pr-[100px]'>
+          <Card className='my-10 lg:my-14 z-20 w-full lg:max-w-[370px] h-full lg:max-h-[400px] p-7 rounded-[24px]'>
             <img src='/asset/image/tripimage.jpg' alt='girl' className='w-full rounded-[24px]' />
             <div className='my-7'>
               <p className='text-greeceColor font-[600] font-serif text-[18px] leading-[22px] tracking-[4%]'>Trip To Greece</p>
@@ -73,7 +73,7 @@ const BookTripSection = () => {
               </div>
             </div>
           </Card>
-          <Card className='absolute bottom-0 left-[50%] p-2 right-0 z-20 !h-[129px] !w-[250px] rounded-[20px]'>
+          <Card className='hidden lg:block absolute bottom-0 left-[50%] p-2 right-0 z-20 !h-[129px] !w-[255px] rounded-[20px]'>
             <div className='flex gap-4 p-3 relative'>
               <div>
                 <img src='/asset/image/MaskGroup.png' alt='Ongoing trip' className='object-contain' />
@@ -84,7 +84,7 @@ const BookTripSection = () => {
                 <div className='mb-1 text-[12px] font-[400]'>
                   <span className='text-subColor'>40%</span> <b>completed</b>
                 </div>
-                <div className='w-full bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-gray-700 relative'>
+                <div className='w-[156px] bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-gray-700 '>
                   <div className='bg-blue-600 h-1.5 rounded-full' style={{ width: "40%" }}></div>
                 </div>
               </div>
@@ -92,11 +92,9 @@ const BookTripSection = () => {
           </Card>
 
         </div>
-        {/* <div className="absolute  left-[45%] bottom-0 z-[-1] " >
-          <EllipseSvg />
-        </div> */}
+       
       
-        <div className="absolute top-[40%] left-[80%]  w-[20px]  h-[20px] opacity-[10%] bg-ellipse shadow-ellipse z-[-1]" />
+        <div className="hidden lg:block absolute top-[40%] left-[80%]  w-[20px]  h-[20px] opacity-[10%] bg-ellipse shadow-ellipse z-[-1]" />
 
         
 

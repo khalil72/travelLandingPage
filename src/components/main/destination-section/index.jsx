@@ -11,11 +11,14 @@ const DestinationSection = () => {
     <Container className='relative'>
       <Heading subtitle={'Top Selling'} title={'Top Destinations'}/>
       
-      <div className='flex flex-col  lg:flex-row  justify-between gap-0 my-[65px]'>
+      <div className='flex flex-col  lg:flex-row  justify-between gap-0  my-[40px] lg:my-[65px]'>
         {DesinationData?.map((item,index)=>(
-           <Card className='p-0 m-0 w-full max-w-[320px] !max-h-[457px] !rounded-[36px]' key={index}>
-           <img src={item?.image}  alt='img' className='h-[307px] object-cover rounded-t-[24px]'/>
-           <div className='p-7'>
+          <Card
+          className='p-0 m-0 w-full md:mx-auto lg:mx-0 md:max-w-[300px] lg:max-w-[320px] !h-full lg:!max-h-[457px] !rounded-[36px] mb-10 lg:mb-0'
+          key={index}
+        >
+           <img src={item?.image}  alt='img' className='lg:h-[307px] object-cover rounded-t-[24px]'/>
+           <div className='p-5 lg:p-7'>
            <div className='flex justify-between mb-5'>
             <p className='text-[18px] font-[400] leading-[22px] text-subColor'>{item?.text}</p>
             <p className='text-[18px] font-[400] leading-[22px] text-subColor'>{item?.price}</p>
@@ -38,7 +41,7 @@ const DestinationSection = () => {
       
       </div>
 
-     <div className='absolute right-[-57px] top-[50%] z-[-1] '>
+     <div className='hidden lg:block absolute right-[-57px] top-[50%] z-[-1] '>
      <SpringSvg  />
      </div>
      

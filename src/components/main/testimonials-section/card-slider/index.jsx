@@ -24,7 +24,7 @@ const CardSlider = () => {
     };
 
     return (
-        <div className="relative w-full max-w-[669px] h-[245px] p-4">
+        <div className="relative w-full lg:max-w-[669px] lg:h-[245px] p-4">
             <Slider {...settings} className="">
                 {TestimonailData?.map((testimonial, index) => (
                     <div key={index} className="testimonial-slide flex justify-center relative mb-6 ">

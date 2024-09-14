@@ -36,7 +36,7 @@ const LogoSection = () => {
   };
 
   return (
-    <Container className='h-full max-h-[162px]'>
+    <Container className='h-full lg:max-h-[162px]'>
       <div className="relative">
         <Slider {...settings} className="">
           {LogoData?.map((item, index) => (

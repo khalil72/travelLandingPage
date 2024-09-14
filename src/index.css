@@ -5,6 +5,7 @@
 
 body {
     font-family: 'Google Sans', sans-serif;
+    overflow-x: hidden;
   }
  
   @layer utilities {
@@ -17,7 +18,12 @@ body {
 
   @layer slick-dots {
     .slick-dots {
-      text-align: left !important;
+      @apply text-center; /* By default, center-align for smaller screens */
+  }
+  @screen lg {
+      .slick-dots {
+          @apply text-left; /* Left-align on large screens */
+      }
     }
   
     .slick-dots li button:before {

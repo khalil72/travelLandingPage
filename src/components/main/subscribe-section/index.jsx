@@ -8,16 +8,16 @@ import SubscribeNavigation from '../../svgs/subcribe-navigation';
 
 const SubscribeSection = () => {
     return (
-        <Container className='relative rounded-custom h-full lg:max-h-[407px] p-10 pt-20'>
-            <button className='absolute top-[-25px]  right-[-18px] z-10 '>
+        <Container className='relative rounded-custom h-full lg:max-h-[407px]  p-5 lg:p-10 pt-16 lg:pt-20'>
+            <button className='hidden lg:block absolute top-0 lg:top-[-25px]  lg:right-[-18px] z-10 '>
            <SubscribeNavigation />             
             </button>
            
-        {/* opacity manage in this div  */}
+       
             <div className='absolute inset-0 before:rounded-custom  z-0 before:content-[""] before:absolute before:inset-0 before:bg-custombg before:opacity-[20%]'></div>
 
             
-            <div className='absolute top-0  right-[0px] '>
+            <div className=' lg:block absolute top-0  right-[0px]  '>
             <SubscribeLine2 />
             </div>
             
@@ -27,10 +27,10 @@ const SubscribeSection = () => {
                 <Heading 
                     title='Subscribe to get information, latest news and other interesting offers about Jadoo'
                     className={{ 
-                        title: 'text-subColor !text-[30px] !leading-[54px] !font-[600] !text-center !items-center mx-5' 
+                        title: 'text-subColor !text-[33px] !leading-[54px] !font-[600] !text-center !items-center mx-5' 
                     }}
                 />
-                <form className='flex justify-center items-center gap-4 my-10'>
+                <form className='flex  flex-col lg:flex-row justify-center items-center gap-4 my-10'>
                     <div className='relative'>
                         <div className='absolute inset-y-0 left-4 flex items-center pointer-events-none'>
                             <img src='/asset/image/email.png' alt='Email Icon' className='w-5 h-5' />
@@ -38,18 +38,18 @@ const SubscribeSection = () => {
                         <input
                             type='email'
                             placeholder='Enter your email'
-                            className='w-[421px] max-w-[421px] pl-12 p-4 rounded-md border border-gray-300 shadow-md'
+                            className='w-full lg:w-[421px] lg:max-w-[421px] pl-12 p-4 rounded-md border border-gray-300 shadow-md'
                         />
                     </div>
                     <Button
                         text='Subscribe'
-                        className='bg-orange-500 !max-w-[180px]'
+                        className='bg-orange-500 lg:!max-w-[180px]'
                     />
                 </form>
             </div>
 
             {/* Background Image with Opacity */}
-            <div className='absolute bottom-0 left-8  opacity-[6%] z-0 overflow-hidden'>
+            <div className='absolute bottom-0 top-[135px] left-8  opacity-[7%] z-0 overflow-hidden'>
            <SubcribeLine1 />
 
             </div>
