@@ -15,8 +15,6 @@ const BookTripSection = () => {
   return (
     <Container className={'!h-full lg:!max-h-[492px] mb-10'}>
       <div className='flex flex-col lg:flex-row   justify-center lg:justify-between gap-0 h-full lg:max-h-[400px] relative'>
-
-
         <div className='w-full lg:max-w-[450px]'>
           <Heading
             subtitle={'Easy and Fast'}
@@ -39,7 +37,6 @@ const BookTripSection = () => {
           </ul>
         </div>
 
-
         <div className='relative lg:pr-[100px]'>
           <Card className='my-10 lg:my-14 z-20 w-full lg:max-w-[370px] h-full lg:max-h-[400px] p-7 rounded-[24px]'>
             <img src='/asset/image/tripimage.jpg' alt='girl' className='w-full rounded-[24px]' />
@@ -52,9 +49,7 @@ const BookTripSection = () => {
               <div className='flex gap-6 my-4'>
                 <button className='flex items-center bg-[#F5F5F5] justify-center rounded-[50%] w-[36px] h-[36px]  font-[900] text-[#F5F5F5]'>
                   <LeafSvg />
-
                 </button>
-
                 <button className='flex items-center bg-[#F5F5F5] justify-center rounded-[50%] w-[36px] h-[36px]  font-[900] text-[#F5F5F5]'>
                   <MapSvg />
                 </button>
@@ -92,15 +87,8 @@ const BookTripSection = () => {
           </Card>
 
         </div>
-       
-      
         <div className="hidden lg:block absolute top-[40%] left-[80%]  w-[20px]  h-[20px] opacity-[10%] bg-ellipse shadow-ellipse z-[-1]" />
-
-        
-
       </div>
-
-
     </Container>
 
   )

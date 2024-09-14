@@ -41,11 +41,11 @@ const LogoSection = () => {
         <Slider {...settings} className="">
           {LogoData?.map((item, index) => (
             <div key={index} className="  ">
-             <img
-  src={item?.image}
-  alt={`logo-${index}`}
-  className="h-[136px] w-[136px] object-contain"
-/>
+              <img
+                src={item?.image}
+                alt={`logo-${index}`}
+                className="h-[136px] w-[136px] object-contain"
+              />
 
             </div>
           ))}
