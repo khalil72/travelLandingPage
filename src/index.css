@@ -18,13 +18,9 @@ body {
 
   @layer slick-dots {
     .slick-dots {
-      @apply text-center; /* By default, center-align for smaller screens */
+      @apply text-left; 
   }
-  @screen lg {
-      .slick-dots {
-          @apply text-left; /* Left-align on large screens */
-      }
-    }
+ 
   
     .slick-dots li button:before {
       font-size: 10px;
