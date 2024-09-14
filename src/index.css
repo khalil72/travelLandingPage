@@ -18,7 +18,7 @@ body {
 
   @layer slick-dots {
     .slick-dots {
-      @apply text-left; 
+      @apply !text-left; 
   }
  
   
